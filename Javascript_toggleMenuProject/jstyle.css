@@ -1,0 +1,143 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* CSS kodu burada başlıyor */
+
+
+
+body {background-color: #F1F1F1}
+
+.upper-nav {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100% ;
+  background-color: #FFF;
+  z-index: 1000;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.button-nav {
+  width: 60px;
+  height: 100%;
+  background-color: #F98F39;
+  background-image: url("button.png");
+  background-repeat: no-repeat;
+  background-size: 75%;
+  background-position: center;
+  cursor: pointer;
+}
+
+.button-nav:hover{
+  opacity: 0.5;
+}
+
+.upper-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 15px;
+}
+.upper-nav ul li {
+  list-style: none;
+  line-height: 60px;
+}
+
+.upper-nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  height: 100%;
+  padding: 0 10px;
+  color: #111;
+  font-family: arial;
+  font-size: 15px;
+}
+
+.sidebar-nav {
+  background-color: #1B1B1B;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  padding: 0 5px;
+  height: calc(100vh - 60px);
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-nav ul{
+  padding-top: 20px;
+  overflow: hidden;
+  visibility: hidden;
+
+}
+.sidebar-nav ul li{
+  height: 60px;
+  list-style: none;
+}
+.sidebar-nav ul li a , .sidebar-nav ul li span {
+  display: block;
+  line-height: 60px;
+  padding: 0 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFF;
+  font-size: arial;
+  font-size: 16px;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.sidebar-nav ul li a:hover {
+  background-color: #222;
+}
